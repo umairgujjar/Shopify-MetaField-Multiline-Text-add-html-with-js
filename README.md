@@ -16,7 +16,6 @@ function htmlDecode(input) {
 	return doc.documentElement.textContent;
 }
 
-    //change .metafield to your custom class name if needed
 document.querySelectorAll('.metafield').forEach(function(item) {
 	item.innerHTML = htmlDecode(item.innerHTML);
 });
