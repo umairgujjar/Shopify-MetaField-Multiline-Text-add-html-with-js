@@ -10,7 +10,7 @@ or change '.metafield' to your theme's class name where you are using metafield.
 Here's code
 
 ```
-  <script>
+<script>
 function htmlDecode(input) {
 	var doc = new DOMParser().parseFromString(input, "text/html");
 	return doc.documentElement.textContent;
@@ -18,5 +18,7 @@ function htmlDecode(input) {
 document.querySelectorAll('.metafield').forEach(function(item) {
 	item.innerHTML = htmlDecode(item.innerHTML);
 });
-  </script>
+</script>
 ```
+
+Add this code to section/snippet where you are using metafield or to theme.liquid
