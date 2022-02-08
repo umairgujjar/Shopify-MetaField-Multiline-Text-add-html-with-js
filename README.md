@@ -5,3 +5,20 @@ Here's a quick fix to Shopify Multi Line Metafield not rendering html tags on fr
 All you have to do is add class "metafield"
 
 or change '.metafield' to your theme's class name where you are using metafield.
+
+
+Here's code
+
+<code>
+  <script>
+function htmlDecode(input) {
+	var doc = new DOMParser().parseFromString(input, "text/html");
+	return doc.documentElement.textContent;
+}
+
+    //change .metafield to your custom class name if needed
+document.querySelectorAll('.metafield').forEach(function(item) {
+	item.innerHTML = htmlDecode(item.innerHTML);
+});
+  </script>
+  </code>
