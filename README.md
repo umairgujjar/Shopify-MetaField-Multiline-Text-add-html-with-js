@@ -9,15 +9,14 @@ or change '.metafield' to your theme's class name where you are using metafield.
 
 Here's code
 
-<code>
+```
   <script>
 function htmlDecode(input) {
 	var doc = new DOMParser().parseFromString(input, "text/html");
 	return doc.documentElement.textContent;
 }
-
 document.querySelectorAll('.metafield').forEach(function(item) {
 	item.innerHTML = htmlDecode(item.innerHTML);
 });
   </script>
-  </code>
+```
