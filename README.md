@@ -22,3 +22,8 @@ document.querySelectorAll('.metafield').forEach(function(item) {
 ```
 
 Add this code to section/snippet where you are using metafield or to theme.liquid
+
+
+Star this directory:star:
+Optionally you can follow me for more.
+Message on [Twitter](https://twitter.com/MrUmairGujjar) or [LinkedIn](https://www.linkedin.com/in/umairgujjar/) if you need any help.
